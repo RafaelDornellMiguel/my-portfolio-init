@@ -6,7 +6,7 @@ import AnimationComponent from "../../../../components/AnimationComponent/Animat
 const AboutSection: React.FC = () => {
 
     const StyledCard = styled(Card)(({ theme }) => ({
-        padding: "10px 10px",
+        padding: "20px 20px",
         textAlign: "center",
         marginBottom: "10px",
         '&:hover': {
@@ -15,7 +15,7 @@ const AboutSection: React.FC = () => {
     }));
 
     const skillsSet = [
-        "Javascript", "Typescript", "React", "Next", "Git", "HTML", "CSS", "Cypress", "AWS", "GCP", "Material UI", "Figma"
+        "MySQL", "PostgreSQL", "Python", "JavaScript", "TypeScript", "HTML5", "CSS3", "Node.js", "React", "Docker", "Git", "GitHub"
     ]
 
     return (
@@ -31,7 +31,7 @@ const AboutSection: React.FC = () => {
                                 <WorkspacePremiumIcon />
                                 <Typography textAlign="center" fontWeight={600}>Experience</Typography>
                                 <Typography textAlign="center">1+ years</Typography>
-                                <Typography textAlign="center">Frontend Development</Typography>
+                                <Typography textAlign="center">Full Stack Developer | Data analyst</Typography>
                             </StyledCard>
                         </AnimationComponent>
                     </Grid>
@@ -40,8 +40,8 @@ const AboutSection: React.FC = () => {
                             <StyledCard variant="outlined">
                                 <SchoolIcon />
                                 <Typography textAlign="center" fontWeight={600}>Education</Typography>
-                                <Typography textAlign="center">Bachelors Degree</Typography>
-                                <Typography textAlign="center">Electrical Engineer</Typography>
+                                <Typography textAlign="center">technologist</Typography>
+                                <Typography textAlign="center">analysis and development</Typography>
                             </StyledCard>
                         </AnimationComponent>
 
@@ -49,17 +49,10 @@ const AboutSection: React.FC = () => {
                 </Grid>
                 <Box pb={1}>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cras porta semper velit vel rutrum.
-                        Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris.
-                        Phasellus a ultrices elit.
-                        Curabitur ut diam eu orci auctor pretium.
-                        Nullam ultricies erat quam, eget porta velit vehicula sit amet.
-                        Nullam sodales iaculis metus, sed vestibulum nisl vulputate at.
-                        Integer in pulvinar libero.
-                        Donec ornare est quis tortor varius efficitur.
-                        Maecenas sed erat quis felis facilisis pellentesque.
-                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id felis convallis, luctus lorem eget, varius dolor.
+                    Sou Rafael Miguel, engenheiro de software e analista de dados com experiência em extração, transformação e integração de dados utilizando Python e bancos de dados PostgreSQL, com suporte de ferramentas como DBeaver.
+                    Tenho sólido conhecimento em automação de processos e scripts eficientes, garantindo que dados complexos sejam tratados e disponibilizados de forma confiável e escalável.
+                    Apaixonado por tecnologia, busco aplicar boas práticas de programação e engenharia de dados para otimizar processos e gerar soluções robustas que impactem positivamente o negócio.
+                    Além do lado técnico, sou criativo e analítico, sempre explorando novas formas de resolver problemas de maneira estruturada e inovadora.
                     </Typography>
                 </Box>
                 <hr />

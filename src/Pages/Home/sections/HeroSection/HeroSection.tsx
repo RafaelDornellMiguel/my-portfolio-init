@@ -9,27 +9,32 @@ import CV from "../../../../assets/pdfs/Open.pdf"
 
 const HeroSection: React.FC = () => {
 
-    const StyledImg = styled("img")(({ theme }) => ({
-        width: "80%",
-        border: `1px solid ${theme.palette.primary.contrastText}`,
-        borderRadius: "50%",
-        position: "relative"
-    }));
+const StyledImg = styled("img")(({ theme }) => ({
+    width: "400px",        // maior que antes
+    height: "400px",       // mantém proporção quadrada
+    border: `3px solid ${theme.palette.primary.contrastText}`,
+    borderRadius: "50%",   // círculo perfeito
+    objectFit: "cover",    // centraliza e evita distorção
+    display: "block",
+    margin: "0 auto",      // centraliza horizontalmente
+    position: "relative"
+}));
 
     const StyledHero = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
         width: "100%",
-        [theme.breakpoints.up('xs')]: {
-            display: "block",
-            padding: "20px",
-            paddingTop: "100px",
-            paddingBottom: "40px",
-        },
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        padding: "20px",
         [theme.breakpoints.up('md')]: {
-            display: "flex",
-            alignItems: "center",
+            flexDirection: "row",
+            justifyContent: "space-around",
             paddingTop: "100px",
-            height: "100vh"
+            height: "100vh",
+            textAlign: "left"
         },
     }));
 
@@ -73,7 +78,7 @@ const HeroSection: React.FC = () => {
                         </Grid>
                         <Grid item xs={12} md={7}>
                             <Typography color="primary.contrastText" variant="h1" pb={2} textAlign="center">
-                                Adriana Saty
+                                Rafael Dornell Miguel (Raji)
                             </Typography>
                             <Typewriter text="I'm a Software Engineer" delay={120} variant="h2" color="primary.contrastText" />
                             <Box mt={3}>

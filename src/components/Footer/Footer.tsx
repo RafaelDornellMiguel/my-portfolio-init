@@ -10,18 +10,18 @@ const Footer: React.FC = () => {
             <Box pt={2} pb={2}>
                 <Container maxWidth="sm">
                     <Box display="flex" alignItems="center" justifyContent="space-around" pb={1}>
-                        <IconButton onClick={() => window.open("https://github.com/AdrianaSaty")}>
+                        <IconButton onClick={() => window.open("https://github.com/RafaelDornellMiguel")}>
                             <GitHubIcon />
                         </IconButton>
-                        <IconButton onClick={() => window.open("https://www.linkedin.com/in/adriana-saty/")}>
+                        <IconButton onClick={() => window.open("https://www.linkedin.com/mynetwork/grow/")}>
                             <LinkedInIcon />
                         </IconButton>
-                        <IconButton href="mailto:example@example.com" target="_blank">
+                        <IconButton href="rafaelldornemigueel@gmail.com" target="_blank">
                             <EmailIcon />
                         </IconButton>
                     </Box>
                     <Typography textAlign="center">
-                        © 2024 Adriana Saty - All rights reserved
+                        © 2025 Rafael Dornell Miguel- All rights reserved
                     </Typography>
                 </Container>
             </Box>
